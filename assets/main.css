@@ -1,0 +1,36 @@
+.example1 {
+	height: 300px;
+	width: 2500vw;	
+	overflow: hidden;
+	position: absolute;
+	top:50%;
+	transform: translateY(-50%);
+   }
+
+   @font-face {
+	font-family: ali;
+	src: url("ali.otf");
+  }
+   .example1 h3 {
+	font-size: 15em;
+	font-family: ali;
+	color: #F79917;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	line-height: 300px;
+	/* Starting position */
+	transform:translateX(1000%);
+	/* Apply animation to this element */	
+	animation: example1 150s linear infinite;
+   }
+   /* Move it (define the animation) */
+   @keyframes example1 {
+	0%   { 
+	transform: translateX(1%); 		
+	}
+	100% { 
+	transform: translateX(-100%); 
+	}
+   }
